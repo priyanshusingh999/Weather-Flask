@@ -1,0 +1,66 @@
+/* Enhanced CSS styles for the Weather App */
+
+/* Weather details section styles */
+/* This styles the main container div that displays weather information */
+.weather-details {
+    background: linear-gradient(135deg, #81d4fa, #4fc3f7);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+    max-width: 1000px; /* increased width further */
+    min-height: 400px; /* height remains the same */
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.weather-details:hover {
+    transform: scale(1.05);
+}
+
+/* Heading style inside weather details */
+.weather-details h2 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 0.75rem;
+}
+
+/* Paragraph styles inside weather details */
+.weather-details p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .weather-details {
+        max-width: 90%;
+        padding: 1.5rem 2rem;
+        min-height: auto;
+    }
+    .weather-details h2 {
+        font-size: 1.8rem;
+    }
+    .weather-details p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-details {
+        max-width: 95%;
+        padding: 1rem 1.5rem;
+    }
+    .weather-details h2 {
+        font-size: 1.5rem;
+    }
+    .weather-details p {
+        font-size: 1rem;
+    }
+}
